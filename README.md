@@ -1,8 +1,10 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Nguyễn%20Trương%20Thiện%20Phát%20(Fat)&fontSize=36&fontColor=fff&animation=fadeIn&fontAlignY=30&desc=Frontend%20Developer%20|%20Creative%20Coder&descAlignY=50&descAlign=62" width="100%" />
 
+# Nguyễn Trương Thiện Phát (Fat) - GitHub Profile
+
 <div align="center">
   <a href="#">
-    <img src="Messenger_creation_13EB7AF0-E142-4FE5-823C-0BEFA5A07A12.jpeg" alt="Nguyễn Trương Thiện Phát" style="width: auto; max-width: 250px; height: auto; border-radius: 100%; border: 10px solid transparent; background: padding-box, conic-gradient(#f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%); background-origin: border-box; padding: 5px; box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 15px rgba(255, 0, 255, 0.7));" />
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" style="width: auto; max-width: 150px; height: auto; border-radius: 100%; border: 8px solid transparent; background: padding-box, conic-gradient(#f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%); background-origin: border-box; padding: 3px; box-shadow: 0 0 15px #FF00FF, 0 0 30px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.7));" />
   </a>
   
   <h1 align="center">
