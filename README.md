@@ -56,7 +56,7 @@
 <img align="right" width=200px alt="PNG" src="https://i.pinimg.com/originals/a0/10/21/a010215b786ada4176ae237b5b154310.gif" />
 
 -   ⚜️ My name is Nguyễn Trương Thiện Phát.
--   ❤️‍🔥 26/02/200X
+-   ❤️‍🔥 29/04/2009 (My birthday!)
 -   💬 My nickname is Fat (Pcoder).
 -   🌍 I live in Bà Rịa - Vũng Tàu.
 -   🍁 Profile: [Facebook](https://www.facebook.com/)
@@ -75,6 +75,7 @@
 
 ![](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg)
 ![Hello](hello.svg)
+
 # 🤝🏻 Connect with Me
 <p align="center">
 &nbsp; <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="100" /></a> 
@@ -86,5 +87,4 @@
 <br>
 <a href="#" target="_blank">
   <img src="profile-night-view.svg" width="1200" alt="Click to see the source" />
-</a>  
 </a>
