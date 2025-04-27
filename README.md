@@ -1,10 +1,22 @@
 # Nguyễn Trương Thiện Phát (Fat) - GitHub Profile
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 4px solid transparent; background: padding-box, linear-gradient(45deg, #ff0000, #ff9a00, #d0de21, #4fdc4a, #3fdad8, #2fc9e2, #1c7fee, #5f15f2, #ba0cf8, #fb07d9); background-origin: border-box; padding: 4px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);" />
+  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 4px solid transparent; background: padding-box, linear-gradient(45deg, #ff0000, #ff9a00, #d0de21, #4fdc4a, #3fdad8, #2fc9e2, #1c7fee, #5f15f2, #ba0cf8, #fb07d9); background-origin: border-box; padding: 4px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); animation: morph 8s ease-in-out infinite;" />
   
-  <h1 align="center">Xin chào, tôi là Phát (Fat) 👋</h1>
+  <h1 align="center">
+    <a href="https://git.io/typing-svg">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=F72281&center=true&vCenter=true&random=false&width=435&lines=Xin+ch%C3%A0o%2C+t%C3%B4i+l%C3%A0+Ph%C3%A1t;Developer+%26+Creator;Always+learning+new+things" alt="Typing SVG" />
+    </a>
+  </h1>
 </div>
+
+<style>
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; } 
+  50% { border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+}
+</style>
 
 <div align="center">
   <a href="mailto:phatgaming090@gmail.com">
@@ -17,6 +29,8 @@
     <img src="https://img.shields.io/badge/GitHub-Kenne400k-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
+
+![](https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg)
 
 <div align="center">
   <img src="https://img.shields.io/github/workflow/status/Kenne400k/Kenne400k/Profile%20README?style=flat-square" alt="GitHub Workflow Status" />
@@ -53,27 +67,31 @@
   
   ### Ngôn ngữ lập trình & Công nghệ
   <div>
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+    <a href="#"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" /></a>
   </div>
   
   ### Framework & Thư viện
   <div>
-    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-    <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
-    <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js" />
+    <a href="#"><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js" /></a>
   </div>
   
   ### Công cụ & Quy trình làm việc
   <div>
-    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-    <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-    <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+    <a href="#"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" /></a>
   </div>
+  
+  <h4 align="center">
+    <a href="https://github.com/Kenne400k?tab=repositories" title="Hiển thị Repository">🔎 Xem tất cả dự án của tôi 🔍</a>
+  </h4>
 </details>
 
 <details open>
@@ -108,6 +126,10 @@
   </picture>
 </div>
 
+<div align="center">
+  <img src="https://activity-graph.herokuapp.com/graph?username=Kenne400k&bg_color=1a1b27&color=38bdae&line=bf91f3&point=38bdae&area=true&hide_border=true" width="90%">
+</div>
+
 <h2 align="center">📫 Liên hệ với tôi</h2>
 
 <div align="center">
@@ -127,6 +149,7 @@
 <br>
 
 <div align="center">
+  <img src="https://readme-jokes.vercel.app/api?theme=radical" alt="Jokes Card" />
   
   **"Code là thi ca của logic. Bug là thơ tào lao." - Fat**
 
