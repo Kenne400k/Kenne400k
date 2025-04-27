@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Trương Thiện Phát - GitHub Profile</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px;
+      background-color: #f6f8fa;
+      color: #24292e;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: gradientBorder 8s ease infinite;
+      position: relative;
+    }
+    
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      background-size: 400% 400%;
+      z-index: -1;
+      border-radius: 12px;
+      animation: gradientBorder 8s ease infinite;
+      opacity: 0.6;
+    }
+    
+    @keyframes gradientBorder {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    a {
+      color: #0366d6;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+    
+    a:hover {
+      color: #0078ff;
+      transform: translateY(-2px);
+    }
+    
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #24292e;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    
+    .typing-effect {
+      overflow: hidden;
+      border-right: 3px solid;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      font-size: 1.8rem;
+      width: 100%;
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 90% }
+    }
+    
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #0366d6; }
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e1e4e8;
+      padding-bottom: 8px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(to right, #0366d6, #2ea043, #ff6b6b);
+      animation: heading-line 2.5s ease forwards;
+    }
+    
+    @keyframes heading-line {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    /* Language switcher */
+    .language-switcher {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    
+    .language-switcher a {
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .language-switcher a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .language-switcher a:hover::before {
+      left: 100%;
+    }
+    
+    .language-switcher a:hover {
+      background-color: #e1e4e8;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .language-switcher a.active {
+      font-weight: bold;
+      background-color: #0366d6;
+      color: white;
+    }
+    
+    /* Profile Header */
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    .profile-header::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+      border-radius: 5px;
+      animation: gradientMove 3s linear infinite;
+      background-size: 200% 200%;
+    }
+    
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, #0366d6, #2ea043, #ff6b6b) border-box;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: all 0.5s ease;
+      animation: float 3s ease-in-out infinite;
+      position: relative;
+    }
+    
+    .profile-image::after {
+      content: '👨‍💻';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transform: translate(10%, 10%);
+      font-size: 20px;
+      border: 2px solid #0366d6;
+    }
+    
+    @keyframes float {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+      50% {
+        transform: translateY(-15px) rotate(2deg);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+    }
+    
+    .profile-image:hover {
+      transform: rotate(15deg) scale(1.1);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      animation-play-state: paused;
+    }
+    
+    /* Social Links */
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    
+    .social-badge {
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .social-badge::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #0366d6, #2ea043);
+      z-index: -1;
+      transition: 0.5s;
+      opacity: 0;
+    }
+    
+    .social-badge:hover::before {
+      opacity: 1;
+    }
+    
+    .social-badge:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+    
+    .social-badge:hover img {
+      filter: brightness(0) invert(1);
+    }
+    
+    .social-badge img {
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    /* Badges */
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    
+    .badge {
+      transition: all 0.3s ease;
+      filter: grayscale(20%);
+    }
+    
+    .badge:hover {
+      transform: scale(1.1) rotate(-2deg);
+      filter: grayscale(0%);
+      z-index: 2;
+    }
+    
+    /* Skills Section */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 20px 0;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .skills::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23000000' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23000000' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+      z-index: -1;
+      opacity: 0.2;
+      transition: opacity 0.5s ease;
+    }
+    
+    .skills:hover::before {
+      opacity: 0.5;
+    }
+    
+    .skills img {
+      transition: all 0.5s ease;
+      transform-origin: bottom;
+      filter: grayscale(30%);
+      position: relative;
+    }
+    
+    .skills img:hover {
+      transform: translateY(-10px) scale(1.15) rotate(5deg);
+      filter: grayscale(0%) drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+      z-index: 5;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.4);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 5px rgba(0, 102, 255, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 102, 255, 0);
+      }
+    }
+    
+    .skills img:nth-child(odd):hover {
+      animation: pulse 1.5s infinite;
+    }
+    
+    /* Stats Section */
+    .github-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .github-stats > div {
+      flex: 1;
+      min-width: 300px;
+      transition: all 0.5s ease;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .github-stats > div:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* About Section */
+    .about-section {
+      background: linear-gradient(135deg, #f1f1f1, #e0e0e0);
+      border-radius: 10px;
+      padding: 25px;
+      margin: 30px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.5s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .about-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+      transform: rotate(30deg);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .about-section:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-section:hover::before {
+      opacity: 1;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    /* Contribution Graph */
+    .contribution-graph {
+      margin: 30px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+      position: relative;
+    }
+    
+    .contribution-graph::before {
+      content: '🎮 Play with me!';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    
+    .contribution-graph:hover::before {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .contribution-graph::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.2));
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .contribution-graph:hover::after {
+      opacity: 1;
+    }
+    
+    .contribution-graph:hover {
+      transform: scale(1.03) rotate(-1deg);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .contribution-graph img {
+      transition: all 0.5s ease;
+    }
+    
+    .contribution-graph:hover img {
+      filter: saturate(1.5) brightness(1.1);
+    }
+    
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #e1e4e8;
+      position: relative;
+    }
+    
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #0366d6, transparent);
+    }
+    
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+      }
+      
+      .container {
+        background-color: #161b22;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+      
+      h1, h2, h3 {
+        color: #e6edf3;
+      }
+      
+      h2 {
+        border-bottom-color: #30363d;
+      }
+      
+      h2::after {
+        background: linear-gradient(to right, #58a6ff, #39d353, #ff7b72);
+      }
+      
+      a {
+        color: #58a6ff;
+      }
+      
+      a:hover {
+        color: #79c0ff;
+      }
+      
+      .language-switcher a {
+        background-color: #21262d;
+      }
+      
+      .language-switcher a:hover {
+        background-color: #30363d;
+      }
+      
+      .language-switcher a.active {
+        background-color: #58a6ff;
+      }
+      
+      .social-badge {
+        background-color: #21262d;
+      }
+      
+      .social-badge::before {
+        background: linear-gradient(45deg, #58a6ff, #39d353);
+      }
+      
+      .about-section {
+        background: linear-gradient(135deg, #21262d, #30363d);
+      }
+      
+      .footer {
+        border-top-color: #30363d;
+      }
+      
+      .footer::before {
+        background: linear-gradient(to right, transparent, #58a6ff, transparent);
+      }
+      
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #58a6ff; }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <a href="#" id="en-link" class="active">🇺🇸 English</a>
+      <a href="#" id="vi-link">🇻🇳 Vietnamese</a>
+    </div>
+
+    <!-- English Content -->
+    <div id="english">
+      <div class="profile-header">
+        <img class="profile-image" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát">
+        <h1 class="typing-effect">Hi there, I'm Phát (Fat) 👋</h1>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:phatgaming090@gmail.com" class="social-badge">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email">
+          phatgaming090@gmail.com
+        </a>
+        <a href="https://fb.com/pcoder090" class="social-badge">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/facebook.svg" alt="Facebook">
+          pcoder090
+        </a>
+        <a href="https://github.com/Kenne400k" class="social-badge">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub">
+          Kenne400k
+        </a>
+      </div>
+
+      <div class="badges">
+        <img class="badge" src="https://img.shields.io/github/workflow/status/Kenne400k/Kenne400k/Profile%20README?style=flat-square" alt="GitHub Workflow Status">
+        <img class="badge" src="https://img.shields.io/github/v/release/Kenne400k/Kenne400k?style=flat-square" alt="Release">
+        <img class="badge" src="https://img.shields.io/badge/Marketplace-Featured-brightgreen?style=flat-square" alt="Marketplace">
+        <img class="badge" src="https://img.shields.io/npm/types/typescript?style=flat-square" alt="Type Definitions">
+        <img class="badge" src="https://img.shields.io/badge/Code%20Style-Standard-brightgreen?style=flat-square" alt="Code Style">
+      </div>
+
+      <h2>💫 About Me</h2>
+      <div class="about-section">
+        <p>I'm a passionate developer focused on creating elegant solutions to complex problems. With a strong foundation in software development, I enjoy learning new technologies and applying them to real-world challenges.</p>
+        <p>My goal is to contribute to meaningful projects that make a positive impact on people's lives.</p>
+      </div>
+
+      <h2>🚀 Skills</h2>
+      <div class="skills">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+        <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+      </div>
+
+      <h2>📊 GitHub Stats</h2>
+      <div class="github-stats">
+        <div>
+          <img src="https://github-readme-stats.vercel.app/api?username=Kenne400k&show_icons=true&theme=radical" alt="GitHub Stats" style="width: 100%;">
+        </div>
+        <div>
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kenne400k&layout=compact&theme=radical" alt="Top Languages" style="width: 100%;">
+        </div>
+      </div>
+
+      <h2>🏆 GitHub Trophies</h2>
+      <img src="https://github-profile-trophy.vercel.app/?username=Kenne400k&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" style="width: 100%;">
+
+      <h2>🐍 Contribution Graph</h2>
+      <div class="contribution-graph">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kenne400k/Kenne400k/main/github-contribution-grid-snake-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kenne400k/Kenne400k/main/github-contribution-grid-snake.svg">
+          <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/Kenne400k/Kenne400k/main/github-contribution-grid-snake.svg" style="width: 100%;">
+        </picture>
+      </div>
+
+      <div class="footer">
+        <img src="https://komarev.com/ghpvc/?username=Kenne400k&label=Profile%20Views&color=3498db&style=flat-square" alt="Profile Views">
+      </div>
+    </div>
+
+    <!-- Vietnamese Content -->
+    <div id="vietnamese" style="display: none;">
+      <div class="profile-header">
+        <img class="profile-image" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát">
+        <h1 class="typing-effect">Xin chào, tôi là Phát (Fat) 👋</h1>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:phatgaming090@gmail.com" class="social-badge">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email">
+          phatgaming090@gmail.com
+        </a>
+        <a href="https://fb.com/pcoder090" class="social-badge">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/facebook.svg" alt="Facebook">
+          pcoder090
+        </a>
+        <a href="https://github.com/Kenne400k" class="social-badge">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub">
+          Kenne400k
+        </a>
+      </div>
+
+      <div class="badges">
+        <img class="badge" src="https://img.shields.io/github/workflow/status/Kenne400k/Kenne400k/Profile%20README?style=flat-square" alt="GitHub Workflow Status">
+        <img class="badge" src="https://img.shields.io/github/v/release/Kenne400k/Kenne400k?style=flat-square" alt="Release">
+        <img class="badge" src="https://img.shields.io/badge/Marketplace-Featured-brightgreen?style=flat-square" alt="Marketplace">
+        <img class="badge" src="https://img.shields.io/npm/types/typescript?style=flat-square" alt="Type Definitions">
+        <img class="badge" src="https://img.shields.io/badge/Code%20Style-Standard-brightgreen?style=flat-square" alt="Code Style">
+      </div>
+
+      <h2>💫 Về tôi</h2>
+      <div class="about-section">
+        <p>Tôi là một lập trình viên đam mê tạo ra các giải pháp thanh lịch cho các vấn đề phức tạp. Với nền tảng vững chắc trong phát triển phần mềm, tôi thích học các công nghệ mới và áp dụng chúng vào các thách thức thực tế.</p>
+        <p>Mục tiêu của tôi là đóng góp vào các dự án có ý nghĩa, tạo ra tác động tích cực đến cuộc sống của mọi người.</p>
+      </div>
+
+      <h2>🚀 Kỹ năng</h2>
+      <div class="skills">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+        <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+        <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+      </div>
+
+      <h2>📊 Thống kê GitHub</h2>
+      <div class="github-stats">
+        <div>
+          <img src="https://github-readme-stats.vercel.app/api?username=Kenne400k&show_icons=true&theme=radical" alt="GitHub Stats" style="width: 100%;">
+        </div>
+        <div>
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kenne400k&layout=compact&theme=radical" alt="Top Languages" style="width: 100%;">
+        </div>
+      </div>
+
+      <h2>🏆 Danh hiệu GitHub</h2>
+      <img src="https://github-profile-trophy.vercel.app/?username=Kenne400k&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies" style="width: 100%;">
+
+      <h2>🐍 Biểu đồ đóng góp</h2>
+      <div class="contribution-graph">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kenne400k/Kenne400k/main/github-contribution-grid-snake-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kenne400k/Kenne400k/main/github-contribution-grid-snake.svg">
+          <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/Kenne400k/Kenne400k/main/github-contribution-grid-snake.svg" style="width: 100%;">
+        </picture>
+      </div>
+
+      <div class="footer">
+        <img src="https://komarev.com/ghpvc/?username=Kenne400k&label=Lượt%20xem%20trang&color=3498db&style=flat-square" alt="Profile Views">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Language switching functionality
+    const enLink = document.getElementById('en-link');
+    const viLink = document.getElementById('vi-link');
+    const englishContent = document.getElementById('english');
+    const vietnameseContent = document.getElementById('vietnamese');
+    
+    // Function to show English content
+    function showEnglish() {
+      englishContent.style.display = 'block';
+      vietnameseContent.style.display = 'none';
+      enLink.classList.add('active');
+      viLink.classList.remove('active');
+      localStorage.setItem('preferred-language', 'en');
+    }
+    
+    // Function to show Vietnamese content
+    function showVietnamese() {
+      englishContent.style.display = 'none';
+      vietnameseContent.style.display = 'block';
+      enLink.classList.remove('active');
+      viLink.classList.add('active');
+      localStorage.setItem('preferred-language', 'vi');
+    }
+    
+    // Event listeners for language links
+    enLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      showEnglish();
+    });
+    
+    viLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      showVietnamese();
+    });
+    
+    // Check local storage for language preference on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const preferredLanguage = localStorage.getItem('preferred-language');
+      if (preferredLanguage === 'vi') {
+        showVietnamese();
+      } else {
+        showEnglish();
+      }
+      
+      // Add fade-in animation to sections
+      const sections = document.querySelectorAll('h2, .profile-header, .social-links, .about-section, .skills, .github-stats, .contribution-graph');
+      sections.forEach((section, index) => {
+        section.style.animationDelay = `${index * 0.1}s`;
+        section.classList.add('animate-fade-in');
+      });
+    });
+  </script>
+</body>
+</html>
