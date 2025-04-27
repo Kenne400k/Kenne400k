@@ -1,8 +1,10 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Nguyễn%20Trương%20Thiện%20Phát%20(Fat)&fontSize=36&fontColor=fff&animation=fadeIn&fontAlignY=30&desc=Frontend%20Developer%20|%20Creative%20Coder&descAlignY=50&descAlign=62" width="100%" />
+
 # Nguyễn Trương Thiện Phát (Fat) - GitHub Profile
 
 <div align="center">
   <a href="#">
-    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 8px solid #8A2BE2; box-shadow: 0 0 15px #FF00FF, 0 0 30px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));" />
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 8px solid transparent; background: padding-box, conic-gradient(#f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%); background-origin: border-box; padding: 4px; box-shadow: 0 0 15px #FF00FF, 0 0 30px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));" />
   </a>
   
   <h1 align="center">
@@ -152,5 +154,7 @@
 ---
 
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=Cảm%20ơn%20đã%20ghé%20thăm!&fontSize=24&fontColor=fff&animation=twinkling" width="100%" />
+  
   <img src="https://komarev.com/ghpvc/?username=Kenne400k&label=Lượt%20xem%20trang&color=3498db&style=flat-square" alt="Profile Views" />
 </div>
