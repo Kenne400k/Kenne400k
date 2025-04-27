@@ -1,10 +1,9 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Nguyễn%20Trương%20Thiện%20Phát%20(Fat)&fontSize=36&fontColor=fff&animation=fadeIn&fontAlignY=30&desc=Frontend%20Developer%20|%20Creative%20Coder&descAlignY=50&descAlign=62" width="100%" />
 
 <div align="center">
-  <a href="#">
-    <img src="Messenger_creation_13EB7AF0-E142-4FE5-823C-0BEFA5A07A12.jpeg" alt="Nguyễn Trương Thiện Phát" width="150" height="150" style="border-radius: 50%; border: 5px solid #00FFFF; box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFFF; object-fit: cover;" />
-  </a>
+  <img src="path-to-your-svg-file.svg" alt="Nguyễn Trương Thiện Phát" />
 </div>
+
 
   
   <h1 align="center">
