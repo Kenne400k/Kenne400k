@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="#">
-    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 8px solid transparent; background: padding-box, conic-gradient(#f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%); background-origin: border-box; padding: 4px; box-shadow: 0 0 15px #FF00FF, 0 0 30px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));" />
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 100%; border: 10px solid transparent; background: padding-box, conic-gradient(#f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%); background-origin: border-box; padding: 5px; box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 15px rgba(255, 0, 255, 0.7));" />
   </a>
   
   <h1 align="center">
