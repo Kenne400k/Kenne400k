@@ -1,7 +1,7 @@
 # Nguyễn Trương Thiện Phát (Fat) - GitHub Profile
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 4px solid transparent; background: padding-box, linear-gradient(45deg, #ff0000, #ff9a00, #d0de21, #4fdc4a, #3fdad8, #2fc9e2, #1c7fee, #5f15f2, #ba0cf8, #fb07d9); background-origin: border-box; padding: 4px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); animation: morph 8s ease-in-out infinite;" />
+  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 4px solid transparent; background: padding-box, linear-gradient(45deg, #ff0000, #ff9a00, #d0de21, #4fdc4a, #3fdad8, #2fc9e2, #1c7fee, #5f15f2, #ba0cf8, #fb07d9); background-origin: border-box; padding: 4px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);" />
   
   <h1 align="center">
     <a href="https://git.io/typing-svg">
@@ -9,14 +9,6 @@
     </a>
   </h1>
 </div>
-
-<style>
-@keyframes morph {
-  0% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; } 
-  50% { border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
-  100% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
-}
-</style>
 
 <div align="center">
   <a href="mailto:phatgaming090@gmail.com">
