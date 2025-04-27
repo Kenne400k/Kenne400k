@@ -1,11 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Nguyễn%20Trương%20Thiện%20Phát%20(Fat)&fontSize=36&fontColor=fff&animation=fadeIn&fontAlignY=30&desc=Frontend%20Developer%20|%20Creative%20Coder&descAlignY=50&descAlign=62" width="100%" />
 
-<div align="center">
-  <img src="cc.svg" alt="Nguyễn Trương Thiện Phát" />
-</div>
+<img src="Messenger_creation_13EB7AF0-E142-4FE5-823C-0BEFA5A07A12.jpeg" style="width:190px; height:190px; object-fit:cover; border-radius:50%;" />
 
-
-  
   <h1 align="center">
     <a href="https://git.io/typing-svg">
       <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=F72281&center=true&vCenter=true&random=false&width=435&lines=Xin+ch%C3%A0o%2C+t%C3%B4i+l%C3%A0+Ph%C3%A1t;Developer+%26+Creator;Always+learning+new+things" alt="Typing SVG" />
