@@ -1,7 +1,9 @@
 # Nguyễn Trương Thiện Phát (Fat) - GitHub Profile
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 4px solid transparent; background: padding-box, linear-gradient(45deg, #ff0000, #ff9a00, #d0de21, #4fdc4a, #3fdad8, #2fc9e2, #1c7fee, #5f15f2, #ba0cf8, #fb07d9); background-origin: border-box; padding: 4px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);" />
+  <a href="#">
+    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Nguyễn Trương Thiện Phát" width="200" height="200" style="border-radius: 50%; border: 8px solid #8A2BE2; box-shadow: 0 0 15px #FF00FF, 0 0 30px #00FFFF; object-fit: cover; filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));" />
+  </a>
   
   <h1 align="center">
     <a href="https://git.io/typing-svg">
